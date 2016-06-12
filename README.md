@@ -8,6 +8,18 @@ This is a single-page application zenius prestasi template that uses zenius pres
 * [re-frame](https://github.com/Day8/re-frame)
 * [figwheel](https://github.com/bhauman/lein-figwheel)
 
+### Run application:
+```cd``` to your directory,
+then type:
+```
+lein clean
+lein figwheel dev
+```
+
+Figwheel will automatically push cljs changes to the browser.
+
+Wait a bit, then browse to [http://localhost:3449](http://localhost:3449).
+
 ###How to use
 First, simply clone this repo into your computer.
 
@@ -66,15 +78,5 @@ You can load any question you want as long as the id of the question exist, try 
 <question id="q3"></question>
 <question id="q4"></question>
 ```
-### Run application:
-```cd``` to your directory,
-then type:
-```
-lein clean
-lein figwheel dev
-```
 
-Figwheel will automatically push cljs changes to the browser.
-
-Wait a bit, then browse to [http://localhost:3449](http://localhost:3449).
 
