@@ -78,5 +78,13 @@ You can load any question you want as long as the id of the question exist, try 
 <question id="q3"></question>
 <question id="q4"></question>
 ```
+###Backend
+This template use re-frame db as it's database, take a look at src/cljs/ariereframe2/db.cljs
 
+You can add, edit, delete, modify any questions you want there with the format 
+```
+{:id *question Id as string*, :question *question as string*, 
+     :answers *question's answer as map of string, ex {"A" "ans1", "B" "ans2", "C" "ans3", "D" "ans4"}* 
+     :key *answer key as string, ex: "C"*}
+```
 
