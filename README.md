@@ -38,6 +38,34 @@ Then in resources/public/index.html you will see:
   </body>
 </html>
 ```
+Each index.html you tinker must have these in it:
+```
+<div id="app"></div>
+
+<script src="js/compiled/app.js"></script>
+<script>ariereframe2.core.init();</script>
+```
+
+Now, Take a look at 
+```
+<question id="q1"></question>
+```
+
+What it does is to load and render the question html from zenius prestasi database.
+
+That means, you can load and render zenius prestasi html question with the <question> tag:
+```
+<question id="(question's id)"></question>
+```
+
+You can load any question you want as long as the id of the question exist, try it!
+
+```
+<question id="q1"></question>
+<question id="q2"></question>
+<question id="q3"></question>
+<question id="q4"></question>
+```
 ### Run application:
 ```cd``` to your directory,
 then type:
