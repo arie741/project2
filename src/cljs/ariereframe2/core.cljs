@@ -13,13 +13,6 @@
   (reagent/render [views/main-panel]
                   (.getElementById js/document "app")))
 
-(defn mount-quest []
-  (let [q (.getElementsByTagName js/document "question")]
-    (dotimes [i (.-length q)]
-      ^{:keys i}
-      (reagent/render [views/main-panel]
-                      (aget (.getElementsByTagName js/document "question") i)))))
-
 (defn ^:export init [] 
   (re-frame/dispatch-sync [:initialize-db])
   (mount-root)
